@@ -60,7 +60,9 @@
 					beforeSend : function() {$.mobile.loading('show')},
 					complete   : function() {$.mobile.loading('hide')},
 					data       : {username : 'subin', password : 'passwordx'},
-					dataType   : 'json',
+					dataType   : 'jsonp',
+					jsonp      : 'jsoncallback',
+					timeout    : 5000,
 					success    : function(response) {
 						//console.error(JSON.stringify(response));			
 						var offers = '';
