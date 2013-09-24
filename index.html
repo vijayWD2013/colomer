@@ -63,7 +63,7 @@
 					beforeSend : function() {$.mobile.loading('show')},
 					complete   : function() {$.mobile.loading('hide')},
 					data       : {username : 'subin', password : 'passwordx'},
-					dataType   : 'json',
+					dataType   : 'jsonp',
 					success    : function(response) {
 						//console.error(JSON.stringify(response));			
 						var offers = '';
