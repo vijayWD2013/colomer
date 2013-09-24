@@ -41,7 +41,7 @@
     <script type="text/javascript" charset="utf-8">
 		document.addEventListener("deviceready", onDeviceReady, false);
 		function onDeviceReady() {
-			alert('here');
+			alert('here'+$(window).width());
 			var sss = '';
 			if($(window).width() < 320){
 				sss = 'res/screen/android/screen-ldpi-portrait.png';
@@ -53,6 +53,7 @@
 				sss = 'res/screen/android/screen-xhdpi-portrait.png';
 			}
 			var ss_image = '<img src="'+sss+'" width="'+$(window).width()+'" height="'+$(window).height()+'" />';
+			alert(sss);
 			$('#page_splash').html(ss_image);				
 			$.ajax({
 					type       : "POST",
