@@ -55,7 +55,7 @@
 			$('#page_splash').html(ss_image);
 			$.ajax({
 					type       : "POST",
-					url        : "http://system-hostings.dev.wiredelta.com/colomer/api/offers",
+					url        : "http://system-hostings.dev.wiredelta.com/colomer/api/offers/app_offers",
 					crossDomain: true,
 					beforeSend : function() {$.mobile.loading('show')},
 					complete   : function() {$.mobile.loading('hide')},
