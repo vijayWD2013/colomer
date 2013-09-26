@@ -53,7 +53,6 @@
 			}
 			var ss_image = '<img src="'+sss+'" width="'+$(window).width()+'" height="'+$(window).height()+'" />';
 			$('#page_splash').html(ss_image);
-			alert('cvk'+sss);
 			$.ajax({
 					type       : "POST",
 					url        : "http://system-hostings.dev.wiredelta.com/colomer/api/offers",
@@ -69,7 +68,6 @@
 							offers += '<li><img src="'+response.data[i]+'" /></li>';
 						}
 						$('#page_index').show();
-						alert(offers);
 						$('#bxslider').html(offers);
 						$('.bxslider').bxSlider();
 						setTimeout('show_index()', 2000);							
